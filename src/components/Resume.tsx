@@ -89,18 +89,22 @@ export default function Resume() {
               </div>
               <h3 className="font-display text-xl font-semibold">Experience</h3>
             </div>
-            <div className="pl-13">
-              <div className="font-display font-semibold text-lg">{resume.experience.role}</div>
-              <div className="text-sm text-emerald-400 mb-3">{resume.experience.company} · {resume.experience.period}</div>
-              <p className="text-[var(--text-muted)] leading-relaxed mb-4">{resume.experience.description}</p>
-              <div className="space-y-2">
-                {resume.experience.highlights.map((highlight) => (
-                  <div key={highlight} className="flex items-start gap-2.5">
-                    <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
-                    <span className="text-sm text-[var(--text-muted)]">{highlight}</span>
+            <div className="pl-13 space-y-8">
+              {resume.experience.map((experience) => (
+                <div key={`${experience.company}-${experience.role}`}>
+                  <div className="font-display font-semibold text-lg">{experience.role}</div>
+                  <div className="text-sm text-emerald-400 mb-3">{experience.company} · {experience.period}</div>
+                  <p className="text-[var(--text-muted)] leading-relaxed mb-4">{experience.description}</p>
+                  <div className="space-y-2">
+                    {experience.highlights.map((highlight) => (
+                      <div key={highlight} className="flex items-start gap-2.5">
+                        <CheckCircle2 className="w-4 h-4 text-accent flex-shrink-0 mt-0.5" />
+                        <span className="text-sm text-[var(--text-muted)]">{highlight}</span>
+                      </div>
+                    ))}
                   </div>
-                ))}
-              </div>
+                </div>
+              ))}
             </div>
           </motion.div>
 

@@ -296,21 +296,41 @@ export const resume = {
     description:
       'Bachelor of Computer Applications. Additional education includes Senior Secondary through NIOS and Matriculation from Alpine International School.'
   },
-  experience: {
-    role: 'MERN Stack Development Training',
-    company: 'DUCAT Training Institute, Gurugram',
-    period: 'Jan 2025 – Aug 2025',
-    description:
-      'Completed intensive MERN stack training and built practical web applications covering frontend development, backend API design, database modeling, authentication, file uploads, and deployment.',
-    highlights: [
-      'Built full-stack MERN applications from scratch',
-      'Implemented JWT and cookie-based authentication',
-      'Designed RESTful APIs with Express and Mongoose',
-      'Created responsive React frontends with Tailwind CSS',
-      'Managed file uploads with Multer and image handling',
-      'Used Git/GitHub for version control and collaboration',
-    ],
-  },
+  experience: [
+    {
+      role: 'Frontend Developer',
+      company: 'Softkwit Solutions',
+      period: 'june 2025 - Present',
+      description:
+  'Developed responsive, interactive, and user-friendly web interfaces using JavaScript, React.js, and Tailwind CSS, with a focus on clean code, reusable components, API integration, and modern UI/UX practices.',
+
+highlights: [
+  'Developed responsive and interactive web applications using JavaScript, React.js, Tailwind CSS, and modern frontend development practices',
+  'Built reusable and maintainable React components with structured, clean, and readable code for scalable frontend applications',
+  'Integrated REST APIs to fetch, manage, and display dynamic data, handling API requests, responses, loading states, and errors',
+  'Implemented interactive UI elements, animations, forms, navigation, and user-focused features to improve usability and engagement',
+  'Worked with React state management, props, hooks, Context API, and component-based architecture to manage application data and functionality',
+  'Optimized web applications for responsive design, performance, cross-browser compatibility, and consistent user experience across devices',
+  'Used Git and GitHub for version control, code management, collaboration, and maintaining organized development workflows',
+  'Performed debugging and troubleshooting using browser developer tools and resolved UI, functionality, API, and responsiveness-related issues'
+],
+    },
+    {
+      role: 'MERN Stack Development Training',
+      company: 'DUCAT Training Institute, Gurugram',
+      period: 'Jan 2025 – Aug 2025',
+      description:
+        'Completed intensive MERN stack training and built practical web applications covering frontend development, backend API design, database modeling, authentication, file uploads, and deployment.',
+      highlights: [
+        'Built full-stack MERN applications from scratch',
+        'Implemented JWT and cookie-based authentication',
+        'Designed RESTful APIs with Express and Mongoose',
+        'Created responsive React frontends with Tailwind CSS',
+        'Managed file uploads with Multer and image handling',
+        'Used Git/GitHub for version control and collaboration',
+      ],
+    },
+  ],
   certifications: [
     'MERN Stack Web Development — DUCAT Training Institute, Gurugram (Jan 2025 – Aug 2025)',
     'React.js & Frontend Development',
